@@ -1,0 +1,101 @@
+<HTML>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<Title> Control Panel </Title>
+<link rel="shortcut icon" href="static/icon.ico" />
+	
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("static/background.png");
+
+    /* Full height */
+    width: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.centered {
+  position: center;
+  top: 50%;
+  
+}
+
+.credit {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.source {
+  position: fixed;
+  top: 95%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -120px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 12px;
+  height: 100px;
+  width: 49.7%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg">
+	<H3> <Center> ____________________ </H3>
+	<H1> <Center> Control Panel </H1>
+	<H3> <Center>  Hunter Ranger 265 </Center> </H3>
+	<button class="button" style ="float: left">Leisure Battery #1 Voltage: </button>
+	<form action="/Switches">
+         <button class="button" style ="float: right; height: 315px">Switches</button>
+    </form>
+    <button class="button" style ="float: left">Leisure Battery #2 Voltage: </button>
+	<button class="button" style ="float: left">Starter Battery Voltage: </button>
+	
+	<button class="button" style ="background-color: Transparent; height: 10px; width: 100%; padding: 0px; float: right"> </button> 
+	
+	
+	<form action="/IntTemp">
+		<button class="button" style ="float: left">Internal Temperature: </button>
+	</form>
+	<form action="/water">
+		<button class="button" style ="float: right">Fresh Water: </button>
+	</form>
+	<button class="button" style ="float: left">External Temperature: </button>
+	<button class="button" style ="float: right">Fuel: </button>
+	<button class="button" style ="float: left">Water Temperature: </button>
+	<button class="button" style ="float: right">Holding Tank:  </button>
+	<button class="button" style ="background-color: Transparent; height: 30px; width: 100%"> </button>
+	<div class="centered">
+		</div>
+	<div class="credit">
+		<!-- <h4> Made by Alastair Holland </h4> -->
+	</div>
+	</div>
+
+</body>
+</html>
